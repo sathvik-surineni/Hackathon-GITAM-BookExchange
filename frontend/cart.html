@@ -1,0 +1,36 @@
+<html>
+<head>
+<link href="cart.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container">
+		<!--  Shopping cart table wrapper  -->
+		<div id="shopping-cart">
+			<div class="txt-heading">
+				<h1>Shopping cart</h1>
+			</div>
+			<a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+			<table class="tbl-cart" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th class='text-right' width="10%">Unit Price</th>
+						<th class='text-right' width="5%">Quantity</th>
+						<th class='text-right' width="10%">Sub Total</th>
+					</tr>
+				</thead>
+				<!--  Cart table to load data on "add to cart" action -->
+				<tbody id="cartTableBody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right">Total:</td>
+						<td id="itemCount" class="text-right" colspan="2"></td>
+						<td id="totalAmount" class="text-right"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+</body>
+</html>
